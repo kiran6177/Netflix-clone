@@ -1,0 +1,16 @@
+.search-outer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.search-outer input{
+    width: 85%;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 20px;
+}
+.search-outer input:focus{
+    outline-color: #b00612;
+    outline-style: inset;
+}

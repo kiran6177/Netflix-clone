@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/Home';
+import SplashLogo from './Components/Splash/SplashLogo';
+import {useEffect,useState} from 'react'
 
 function App() {
+  const [splash, setSplash] = useState(true);
+  const [exiting,setExiting] = useState(false)
+  useEffect(() => {
+    setTimeout(()=>{
+      setSplash(false)
+    },1000)
+    setTimeout(() => {
+      setExiting(true)
+    }, 500);
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {splash ?
+       <SplashLogo exiting={exiting}/> :
+        <Home/>
+        }
     </div>
   );
 }

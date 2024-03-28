@@ -1,0 +1,24 @@
+.netflix-home{
+    min-height: 100vh;
+    height: auto;
+    background-color: #111;
+    font-family: "Noto Sans", sans-serif;
+}
+.search-result{
+    padding-top: 5rem;
+    padding-left: 4rem;
+    color: white;
+    position: relative;
+    height: 9rem;
+}
+.search-result .closebtn{
+    color: #b00612;
+    position: absolute;
+    right: 7rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+
+}

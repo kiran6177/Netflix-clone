@@ -1,0 +1,72 @@
+.banner{
+    background-size: cover;
+    height: 43rem;
+    color: white;
+    position: relative;
+    transition: all 0.6s ease-in-out;
+}
+.opacity{
+    opacity: 0;
+}
+.banner-content{
+    padding-top:16rem;
+    padding-left: 4rem;
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.6s ease-in-out;
+}
+.banner-content h1{
+    font-size: 4rem;
+}
+.banner-content .type{
+    font-size: 1rem;
+}
+.banner-content .description{
+    font-size: 0.9rem;
+}
+.banner-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.banner-buttons button{
+    margin: 0.5rem 0rem;
+    background-color: rgba(75, 74, 74, 0.359);
+    padding: 0.6rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    transition: all 0.3s ease-in-out;
+}
+.banner-buttons button:hover{
+    background-color: rgba(32, 32, 32, 0.359);
+    transform: scale(1.1);
+}
+.banner-fade{
+    background-image: linear-gradient(180deg,transparent,rgba(0, 0, 0, 0.54),#111);
+    height: 13rem;
+}
+.bannervideo-preview{
+    padding-top: 10rem;
+    padding: 4rem;
+    position: relative;
+}
+.bannervideo-preview .closebtn{
+    color: #b00612;
+    position: absolute;
+    right: 8rem;
+    top: 6rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}

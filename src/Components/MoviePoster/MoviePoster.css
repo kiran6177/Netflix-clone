@@ -1,0 +1,40 @@
+.poster-row{
+    padding:0rem 4rem;
+    color: white;
+}
+.poster-content{
+    display: flex;
+    padding: 2rem 0rem;
+    padding-right: 3rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.poster-content::-webkit-scrollbar{
+    display: none;
+}
+.poster{
+    max-height: 300px;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.smallposter{
+    max-height: 220px;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.poster:hover,.smallposter:hover{
+    transform: scale(1.2);
+}
+.video-preview{
+    position: relative;
+}
+.video-preview .closebtn{
+    color: #b00612;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+.splash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+.splash h4{
+    color: white;
+    margin-top: 5rem;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.netflix-logo{
+    position: relative;
+    width: 228px;
+    height: 320px;
+    overflow: hidden;
+}
+.netflix-logo span{
+    position: absolute;
+    top: 0;
+    width: 80px;
+    background-color: #fff;
+    height: 100%;
+}
+.netflix-logo span:nth-child(1){
+    background-color: #b00612;
+    left: 0;
+}
+.netflix-logo span:nth-child(2){
+    background-color: #e50815;
+    left: 0;
+    z-index: 1;
+    transform-origin: top left;
+    transform: skew(24.8deg);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.436);
+}.netflix-logo span:nth-child(3){
+    background-color: #b00612;
+    right: 0;
+}
+.exiting{
+    opacity: 0;
+}
