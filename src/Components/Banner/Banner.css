@@ -70,3 +70,38 @@
     border: none;
     cursor: pointer;
 }
+@media (max-width:992px) {
+    .banner-content{
+        width: 35rem;
+    }
+    .banner-content h1{
+        font-size: 3rem;
+    }
+    .banner-buttons{
+        width: 80%;
+    }
+}
+@media (max-width:768px) {
+    .banner-content{
+        width: 25rem;
+        padding-left: 2rem;
+        padding-top: 14rem;
+    }
+    .banner-content h1{
+        font-size: 2rem;
+    }
+    .banner-content .description{
+        font-size: 0.7rem;
+    }
+    .banner-buttons{
+        width: 90%;
+    }
+    .banner-buttons button{
+        padding: 0.4rem 2rem ;
+    }
+}
+@media (max-width:450px) {
+    .banner-content{
+        width: 20rem;
+    }
+}
